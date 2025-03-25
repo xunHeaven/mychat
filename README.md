@@ -1,8 +1,10 @@
 # mychat
 概述：集群聊天服务器和客户端。基于muduo网络库实现，mysql数据库存储用户数据，nginx配置负载均衡，redis实现消息队列。
+
 数据库说明：
 创建表：分别为用户表（User），好友列表(friend)，群组表(allgroup)，群组用户表(groupuser)，离线消息表(offlinemessage)。
 数据库表的生成方式见createSql.txt文件。
+
 操作说明：将项目下载或clone 到本地之后，先清空build文件夹的内容。接下来开始编译。
 1.build目录：cmake ..
 2.在build目录：make
